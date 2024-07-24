@@ -1,0 +1,45 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-logo {
+  height: 10rem;
+  margin: 1rem 0;
+}
+
+.App-header {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-bottom: 1px solid #d73953;
+}
+
+.App-header h1 {
+  color: #d73953;
+}
+
+.App-body {
+  padding: 3rem;
+}
+
+.App-body p {
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.App-footer {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-top: 1px solid #d73953;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.App-footer p {
+  font-size: 1rem;
+  color: #d73953;
+  margin: 0;
+}
