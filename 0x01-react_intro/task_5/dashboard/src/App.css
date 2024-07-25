@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 100px;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  border-bottom: 2px solid #e01d3f;
+}
+
+.App-header img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.App-header h1 {
+  font-size: 24px;
+  color: #e01d3f;
+}
+
+.App-body {
+  font-size: 20px;
+  color: #000;
+  padding: 40px;
+  text-align: left;
+}
+
+.App-body p {
+  margin: 0;
+}
+
+.App-footer {
+  font-size: 16px;
+  color: #000;
+  border-top: 2px solid #e01d3f;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
