@@ -6,11 +6,11 @@ export default function Login() {
       <p>Login to access the full dashboard</p>
       <label htmlFor='email'>
         Email:
-        <input type='text' id='email' name='email' />
+        <input type='text' id='email' name='email'/>
       </label>
       <label htmlFor='password'>
         Password:
-        <input type='password' id='password' name='password' />
+        <input type='password' id='password' name='password'/>
       </label>
       <button>OK</button>
     </>
