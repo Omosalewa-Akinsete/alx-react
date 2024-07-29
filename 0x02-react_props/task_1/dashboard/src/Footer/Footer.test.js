@@ -4,11 +4,11 @@ import Footer from './Footer';
 
 describe('<Footer />', () => {
   it('renders without crashing', () => {
-    shallow(<Footer />);
+    shallow(<Footer/>);
   });
 
   it('at the very least renders the text “Copyright”', () => {
-    const wrapper = shallow(<Footer />);
+    const wrapper = shallow(<Footer/>);
     expect(wrapper.text()).toContain('Copyright');
   });
 });
