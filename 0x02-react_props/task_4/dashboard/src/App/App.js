@@ -10,14 +10,14 @@ import './App.css';
 export default function App({ isLoggedIn }) {
   return (
     <>
-      <Notifications />
+      <Notifications/>
       <div className='App'>
-        <Header />
+        <Header/>
         <div className='App-body'>
-          {isLoggedIn ? <CourseList /> : <Login />}
+          {isLoggedIn ? <CourseList/> : <Login/>}
         </div>
         <div className='App-footer'>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </>
