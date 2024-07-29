@@ -9,12 +9,12 @@ export default function App() {
     <>
       <Notifications />
       <div className='App'>
-        <Header />
+        <Header/>
         <div className='App-body'>
-          <Login />
+          <Login/>
         </div>
         <div className='App-footer'>
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </>
