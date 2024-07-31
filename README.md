@@ -4,4 +4,6 @@ This repository contains projects on React
 
 2. 0x01. React intro and 0x00-react_introduction
 
-0x02. React props
+3. 0x02. React props
+
+4. 0x03. React component
