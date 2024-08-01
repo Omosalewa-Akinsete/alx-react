@@ -1,0 +1,14 @@
+table#CourseList {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table#CourseList thread tr,
+table#CourseList tbody {
+    border: solid 1px #ccc;
+}
+
+table#CourseList th:not([coslpan]) {
+    text-align: left;
+}
