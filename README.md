@@ -11,3 +11,5 @@ This repository contains projects on React
 5. 0x04. React inline styling
 
 6. 0x05. React state
+
+7. 0x06. React Immutable
