@@ -1,22 +1,23 @@
-import Notifications from '../Notifications';
-import Header from '../Header/Header';
-import Login from '../Login/Login';
-import Footer from '../Footer/Footer';
+import React from 'react';
 import './App.css';
+import Notifications from './Notifications'; // Import the Notifications component
+import Header from './Header/Header'; // Import the Header component
+import Footer from './Footer/Footer'; // Import the Footer component
+import Login from './Login/Login'; // Import the Login component
 
-export default function App() {
-    return (
-      <>
-        <Notifications />
-        <div className='App'>
-          <Header/>
-          <div className='App-body'>
-            <Login/>
-          </div>
-          <div className='App-footer'>
-            <Footer/>
-          </div>
+function App() {
+  return (
+    <>
+      <Notifications /> {/* Add Notifications component before div.App */}
+      <div className="App">
+        <Header /> {/* Replace header code with Header component */}
+        <div className="App-body">
+          <Login /> {/* Replace login code with Login component */}
         </div>
-      </>
-    );
-  }
+        <Footer /> {/* Replace footer code with Footer component */}
+      </div>
+    </>
+  );
+}
+
+export default App;
