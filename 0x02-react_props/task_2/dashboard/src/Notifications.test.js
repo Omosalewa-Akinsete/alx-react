@@ -17,7 +17,7 @@ describe('Notifications Component', () => {
     const wrapper = shallow(<Notifications/>);
     expect(wrapper.find('p').text()).toBe('Here is the list of notifications');
   });
-  
+
   it('renders the first NotificationItem element with the correct html', () => {
     const wrapper = shallow(<Notifications/>);
     expect(wrapper.find(NotificationItem).first().html()).toContain('<li data-notification-type="default">New course available</li>');
