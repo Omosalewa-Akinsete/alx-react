@@ -14,7 +14,7 @@ function App({ isLoggedIn = false }) {
       <div className="App">
         <Header/>
         <div className="App-body">
-          {isLoggedIn ? <CourseList/> : <Login/>}
+          {isLoggedIn ? <CourseList /> : <Login />}
         </div>
         <Footer/>
       </div>

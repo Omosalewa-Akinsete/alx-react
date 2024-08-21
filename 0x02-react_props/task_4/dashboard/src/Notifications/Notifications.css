@@ -1,41 +1,24 @@
 .Notifications {
-    border: 1px dashed #E0354B;
-    padding: 5px;
-    /* width: 98%; */
-    margin: 5px auto 0;
-    position: absolute;
-    right: 1em;
-}
-.Notifications p {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.5em;
-}
-
-.Notifications p button {
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.Notifications img {
-    width: 8px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  position: relative;
 }
 
 .Notifications ul {
-    margin: 1em 2.5em;
+  list-style-type: none;
+  padding: 0;
 }
 
-.Notifications ul li[data-notification-type='default'] {
-    color: blue;
+.Notifications li {
+  margin-bottom: 10px;
 }
 
-.Notifications ul li[data-notification-type='urgent'] {
-    color: red;
+.Notifications li[data-priority="default"] {
+  color: blue;
 }
 
-.menuItem {
-    text-align: end;
-    margin-top: 1em;
-    margin-right: 1em;
+.Notifications li[data-priority="urgent"] {
+  color: red;
 }
