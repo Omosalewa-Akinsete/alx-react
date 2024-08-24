@@ -4,8 +4,9 @@ import './Notifications.css';
 import closeIcon from './close-icon.png'; // Ensure the correct path to the close icon
 import { getLatestNotification } from './utils';
 import NotificationItem from './NotificationItem'; // Import the NotificationItem component
+import { NotificationItemShape } from './NotificationItemShape';
 
-export function Notifications({ displayDrawer }) {
+export function Notifications({ displayDrawer, listNotifications }) {
   const handleButtonClick = () => {
     console.log('Close button has been clicked');
   };
@@ -37,9 +38,13 @@ export function Notifications({ displayDrawer }) {
         </button>
         <p>Here is the list of notifications</p>
         <ul>
-          <NotificationItem type="default" value="New course available"/>
-          <NotificationItem type="urgent" value="New resume available"/>
-          <NotificationItem html={getLatestNotification()}/>
+          {listNotifications.length === 0 ? (
+            <li>No new notification for now</li>
+          ) : (
+            listNotifications.map(notification => (
+              <NotificationItem key={notification.id} notification={notification} />
+            ))
+          )}
         </ul>
       </div>
     </>
@@ -47,11 +52,12 @@ export function Notifications({ displayDrawer }) {
 }
 
 Notifications.propTypes = {
-  displayDrawer: PropTypes.bool
+  displayDrawer: PropTypes.bool,
+  listNotifications: PropTypes.arrayOf(NotificationItemShape).isRequired,
 };
 
 Notifications.defaultProps = {
-  displayDrawer: false
+  displayDrawer: false,
 };
 
 export default Notifications;
