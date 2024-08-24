@@ -23,30 +23,29 @@
   color: red;
 }
 
-/* Notification Bar when displayDrawer is true */
-.school-dashboard .notifications {
-  display: block;
-  position: absolute;
-  top: 60px;
-  right: 20px;
+.Notifications[data-displayDrawer="false"] {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
 
-.school-dashboard .notifications li {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  font-size: 14px;
+.Notifications[data-displayDrawer="false"] ul {
+  padding: 20px;
+}
+
+.Notifications[data-displayDrawer="false"] li {
+  margin-bottom: 15px;
+}
+
+.Notifications[data-displayDrawer="false"] li[data-priority="default"] {
   color: #333;
 }
 
-.school-dashboard .notifications li:last-child {
-  border-bottom: none;
-}
-
-.school-dashboard .notifications {
-  display: none;
+.Notifications[data-displayDrawer="false"] li[data-priority="urgent"] {
+  color: #ff0000;
 }

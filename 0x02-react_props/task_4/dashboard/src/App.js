@@ -10,11 +10,11 @@ import CourseList from './CourseList/CourseList'; // Import CourseList component
 function App({ isLoggedIn = false }) {
   return (
     <>
-      <Notifications />
+      <Notifications/>
       <div className="App">
         <Header/>
         <div className="App-body">
-          {isLoggedIn ? <CourseList /> : <Login />}
+          {isLoggedIn ? <CourseList/> : <Login/>}
         </div>
         <Footer/>
       </div>

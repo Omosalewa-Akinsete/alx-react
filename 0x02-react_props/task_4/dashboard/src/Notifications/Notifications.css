@@ -22,3 +22,30 @@
 .Notifications li[data-priority="urgent"] {
   color: red;
 }
+
+.Notifications[data-displayDrawer="false"] {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.Notifications[data-displayDrawer="false"] ul {
+  padding: 20px;
+}
+
+.Notifications[data-displayDrawer="false"] li {
+  margin-bottom: 15px;
+}
+
+.Notifications[data-displayDrawer="false"] li[data-priority="default"] {
+  color: #333;
+}
+
+.Notifications[data-displayDrawer="false"] li[data-priority="urgent"] {
+  color: #ff0000;
+}
