@@ -29,7 +29,7 @@ CourseListRow.propTypes = {
   textSecondCell: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
-  }),
+  ]),
 };
 
 CourseListRow.defaultProps = {
